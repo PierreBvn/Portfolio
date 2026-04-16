@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenue sur mon site ! Découvrez mes compétences en développement web, mes projets, et contactez-moi facilement. Création de sites modernes et interactifs." />
+    <meta property="og:title" content="Portfolio - Pierre Boivin, Développeur Web">
+    <meta property="og:description" content="Découvrez mes compétences en développement web, mon parcours, mes projets, et contactez-moi facilement.">
+    <meta property="og:image" content="assets/Image de partage.jpg">
+    <meta property="og:url" content="https://boivinpierre.pages.dev">
+    <meta property="og:image:height" content="630">
+
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="style.css" as="style">
+
+    <meta name="keywords" content="Pierre Boivin, développeur web, HTML, CSS, PHP, JavaScript, React, Node.js, portfolio, projets, contact">
+    <meta name="author" content="Pierre Boivin">
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>Boivin Pierre</title>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-pc" class="navbar">
+            <!-- Boutons à gauche -->
+            <div class="theme-buttons">
+                <button id="theme-toggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
+                <button id="color-toggle" class="color-toggle"><i class="fas fa-palette"></i></button>
+            </div>
+            
+            <!-- Liens au centre -->
+            <ul>
+                <li><a href="#aboutme">A propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <!-- Bouton à droite -->
+            <div class="theme-buttons">
+                <a href="assets/CV - Pierre Boivin.pdf" target="_blank">
+                <button id="cv-download">Mon CV <i class="fas fa-download"></i></button>
+                </a>
+            </div>
+        </nav>
+
+        <nav id="nav-mobile">
+            <div class="nav-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li>               
+                        <div class="theme-buttons">
+                            <button id="theme-toggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
+                            <button id="color-toggle" class="color-toggle"><i class="fas fa-palette"></i></button>
+                        </div>
+                    </li>
+                    <li><a href="#aboutme">A propos</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#parcours">Parcours</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="assets/CV - Pierre Boivin.pdf" class="download-cv" target="_blank">Mon CV <i class="fa fa-download"></i></a></li>
+                </ul>
+            </div>
+        </nav>            
+        
+        <div>
+            <a href="#header" class="scroll-top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </header>
+    
+    <section id="firstpage">
+        <div class="name">
+            <h1>Pierre Boivin</h1>
+            <h2>DÉVELOPPEUR WEB</h2>
+        </div>
+        <div class="pp anim anim-zoom">
+            <div id="pp" alt="Photo de profil"></div>
+        </div>
+    </section>
+
+    <section id="aboutme">
+        <h2>À propos de moi</h2>
+        <div class="about-content anim anim-bottom">
+            <div class="about-text">
+                <p>
+                    Je m'appelle <strong>Pierre Boivin</strong>, j'ai <strong>21 ans</strong> et je suis étudiant en <strong>quatrième année à CESI École d'Ingénieurs en informatique à Lille.</strong> Mon parcours est guidé par une passion pour le développement <strong>fullstack et l'intelligence artificielle.</strong> Curieux de nature, je m'efforce d'acquérir de nouvelles compétences pour rester à la pointe des technologies numériques.
+                </p>
+                <p>
+                    Après plusieurs projets personnels et professionnels, j’ai développé un goût pour la résolution de problèmes complexes qui me mettent à l'épreuve. J'ai pour ambition de contribuer à des solutions innovantes pour des projets concrets, qu'il s'agisse de développer des sites web performants ou des applications mobiles, et pourquoi pas, d'y intégrer de l'IA. <!-- d'intégrer des solutions d'IA dans des projets concrets.-->
+                </p>
+            </div>
+            <div class="about-quote anim anim-zoom">
+                <blockquote>
+                    Je suis actuellement à la recherche d'une alternance dès Septembre 2026 !
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="inverse">Mes Compétences</h2>
+    
+        <div class="skills-container anim anim-bottom">
+          <h3>Savoirs-faire</h3>
+          <ul class="hard-skills">
+            <li>
+            <span class="icon">🌐</span>
+            <strong>HTML & CSS</strong>
+            <p>Création de sites modernes et responsive</p>
+            </li>
+            <li>
+            <span class="icon">📜</span>
+            <strong>JavaScript</strong>
+            <p>Interactivité et dynamisme sur le web</p>
+            </li>
+            <li>
+            <span class="icon">⚛️</span>
+            <strong>React & Node.js</strong>
+            <p>Création d'applications mobiles intégrant de la 3D</p>
+            </li>
+            <li>
+            <span class="icon">💻</span>
+            <strong>PHP</strong>
+            <p>Développement backend dynamique et performant</p>
+            </li>
+          </ul>
+        </div>
+      
+    
+        <div class="skills-container anim anim-bottom">
+          <h3>Savoirs-être</h3>
+          <ul class="soft-skills">
+            <li>
+              <span class="icon">🤝</span>
+              <strong>Travail d’équipe</strong>
+              <p>Collaboratif et à l’écoute</p>
+            </li>
+            <li>
+              <span class="icon">🛠️</span>
+              <strong>Autonome</strong>
+              <p>Capable de mener un projet à bien seul</p>
+            </li>
+            <li>
+              <span class="icon">💡</span>
+              <strong>Proactif</strong>
+              <p>Force de proposition et anticipation</p>
+            </li>
+            <li>
+              <span class="icon">📅</span>
+              <strong>Organisé</strong>
+              <p>Gestion du temps et des priorités</p>
+            </li>
+          </ul>
+        </div>
+    </section>
+
+    <section id="parcours">
+        <h2>Mon parcours</h2>
+        <div class="qualification__sections">
+            <!--==================== QUALIFICATION CONTENT 1 ====================-->
+            <div class="qualification__content qualification__active" data-content="" id="education">
+                <!--==================== QUALIFICATION 1 ====================--> 
+        <div class="qualification__data" style="position: relative; justify-items: right;">
+            <div class="anim anim-left qualification__content__text">
+                <img class="qualification__img" src="assets/Logo CESI.jpg" alt="Logo CESI" style="left: -100px;">
+                <div>
+                    <h3 class="qualification__title">A3 Cycle Ingénieurs - Datascience et IA</h3>
+                    <span class="qualification__subtitle">CESI École d'Ingénieurs, Lille</span>
+                    <div class="qualification__calendar">
+                        <i class="uil uil-calendar-alt"></i>
+                        2024 - Actuel
+                    </div>
+                </div>
+            </div>
+            <div class="qualification__frise">
+                <span class="qualification__rounder anim anim-bottom"></span>
+                <span class="qualification__line"></span>
+            </div>
+        </div>
+
+
+                        
+                    <!--==================== QUALIFICATION 2 ====================--> 
+        <div class="qualification__data">
+            <div class="none"></div>
+            <div class="qualification__frise">
+                <span class="qualification__rounder anim anim-bottom"></span>
+                <span class="qualification__line"></span>
+            </div>
+
+            <div class="anim anim-right qualification__content__text" id="qualification__inverse"> <!-- Ajout de flexbox pour aligner le texte et l'image -->
+                <div style="flex-grow: 1;"> <!-- Permet au texte de prendre tout l'espace disponible -->
+                    <h3 class="qualification__title">Cycle Prépatatoire - Informatique</h3>
+                    <span class="qualification__subtitle">CESI École d'Ingénieurs, Lille</span>
+                    <div class="qualification__calendar">
+                        <i class="uil uil-calendar-alt"></i>
+                        2022 - 2024
+                    </div>
+                </div>
+                <img class="qualification__img" src="assets/Logo CESI.jpg" alt="Logo CESI" style="margin-left: 330px;"> <!-- Image positionnée à droite du texte -->
+            </div>
+        </div>
+
+
+
+                        <!--==================== QUALIFICATION 3 ====================--> 
+        <div class="qualification__data" style="position: relative; justify-items: right;">
+            <div class="anim anim-left qualification__content__text">
+                <img class="qualification__img" src="assets/Logo Lycée Mireille Grenet.jpeg" alt="Logo Lycée Mireille Grenet" style="left: -100px;">
+                <div>
+                    <h3 class="qualification__title">Baccalauréat STI2D - Science de <br class="none">l'Information et du Numérique</h3>
+                    <span class="qualification__subtitle">Lycée Mireille Grenet, Compiègne</span>
+                    <div class="qualification__calendar">
+                        <i class="uil uil-calendar-alt"></i>
+                        2020 - 2022
+                    </div>
+                </div>
+            </div>
+            <div class="qualification__frise">
+                <span class="qualification__rounder anim anim-bottom"></span>
+                <span class="qualification__line"></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="inverse">Mes Projets</h2>
+        <swiper-container class="mySwiper" navigation="true" pagination="true" keyboard="true" mousewheel="true"
+        css-mode="true">
+        <swiper-slide>
+            <div class="slide">
+                <img class="anim anim-zoom" src="assets/VDC.png" alt="Image de la boutique du Glacier" id="img0">
+                <div class="slide-text anim anim-zoom">
+                    <h3>Site E-Commerce Glacier</h3>
+                    <P>Pendant mon stage de troisième année, j'ai eu l'opportunité de développer un site e-commerce complexe, intégrant un système multi-boutique, de la 3D, de l'IA et de nombreuses règles métier.</P>
+                    <a class="button" href="Glacier.html" target="_blank">En savoir plus -></a>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="slide">
+                <img class="anim anim-zoom" src="assets/Boutique AB-SAFETY.png" alt="Image de la boutique d'AB-SAFETY" id="img1">
+                <div class="slide-text anim anim-zoom">
+                    <h3>Site Boutique AB-SAFETY</h3>
+                    <P>Pendant mon stage de deuxième année chez AB-SAFETY, j'ai eu l'occasion de développer leur site boutique permettant de visualiser ainsi que d'acheter leurs produits directement en ligne.</P>
+                    <a class="button" href="https://abqa.ab-safety.fr" target="_blank">Visiter le site -></a>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="slide">
+                <img src="assets/AB-SAFETY.png" alt="Image du site vitrine d'AB-SAFETY"  id="img2">
+                <div class="slide-text">
+                    <h3>Site Vitrine AB-SAFETY</h3>
+                    <P>Pendant mon stage de deuxième année chez AB-SAFETY, j'ai également eu l'occasion de développer leur site vitrine permettant d'apprendre à connaitre l'entreprise et ses services.</P>
+                    <a class="button" href="https://ab-safety.fr" target="_blank">Visiter le site -></a>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="slide">
+                <img src="assets/Studi@.png" alt="Image du site Studi@" id="img3">
+                <div class="slide-text">
+                    <h3>Site Web Studi@</h3>
+                    <P>Site Web créer pendant un projet de deuxième année à CESI, permetant de mettre en relation les entreprises proposant des stages ou alternances et les étudiants.</P>
+                    <a class="button" href="#" target="_blank">En savoir plus -></a>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="slide">
+                <div id="img-appli">
+                    <img class="img-appli" src="assets/Appli 2.png" alt="Image de l'appli 2" style="width: 19%;">
+                    <img class="img-appli" src="assets/Appli 1.png" alt="Image de l'appli 1" style="width: 19%;">
+                </div>
+                <div class="slide-text">
+                    <h3>Appli de Jeux</h3>
+                    <P>Afin d'apprendre le <u>React</u> et le <u>Node.js</u>, je me suis lancé le défi de créer une application pour faire des jeux entre amis en partant de zero !</P>
+                    <a class="button" href="#" target="_blank">En savoir plus -></a>
+                </div>
+            </div>
+        </swiper-slide>
+
+      </swiper-container>
+    </section>    
+
+    <section id="contact" class="contact-section">
+        <h2>Contactez-moi</h2>
+        <p>N'hésitez pas à me contacter pour toutes questions ou collaborations.</p>
+    
+        <div class="contact-container">
+            <form class="contact-form" method="post" action="https://formspree.io/f/xovqryod">
+                <div class="form-group">
+                    <label for="name">Nom*</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message*</label>
+                    <textarea id="message" name="message" placeholder="Votre message" rows="5" style="resize: vertical;" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Envoyer</button>
+            </form>
+        
+            <div class="map-container">
+                <a href="https://www.google.fr/maps?q=Lille" target="_blank">
+                    <img src="assets/Lille map.webp" alt="Lille sur la carte">
+                </a>
+            </div>
+        </div>
+    
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/cesi-boivin-pierre/" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/PierreBvn" target="_blank" class="social-link">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="info">
+                <h4>Boivin Pierre</h4>
+                <p>Développeur Web</p>
+                <a href="assets/CV - Pierre Boivin.pdf" class="download-cv" target="_blank">Télécharger mon CV</a>
+            </div>
+            <div class="plan">
+                <ul>
+                    <li><a href="#aboutme">À propos</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#parcours">Parcours</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Boivin Pierre - Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+const themeToggleButton = document.querySelector('.theme-toggle');
+const colorToggleButton = document.getElementById('color-toggle','2');
+
+const colors = ['salmon', 'steelblue', 'mediumseagreen', '#9F50F5'];
+let currentColorIndex = 0;
+
+// Basculer le thème sombre
+themeToggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+    themeToggleButton.innerHTML = document.body.classList.contains('dark-theme') 
+        ? '<i class="fas fa-sun"></i>' // Icône pour le mode clair
+        : '<i class="fas fa-moon"></i>'; // Icône pour le mode sombre
+});
+
+  // Changer la couleur principale
+  colorToggleButton.addEventListener('click', () => {
+  currentColorIndex = (currentColorIndex + 1) % colors.length;
+  const newColor = colors[currentColorIndex];
+
+  // Modifier la couleur pour les deux thèmes
+  document.documentElement.style.setProperty('--first-color', newColor);
+  document.body.classList.contains('dark-theme') &&
+    document.documentElement.style.setProperty('--first-color', newColor);
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+<script>
+// Fonction pour vérifier la visibilité d'un élément
+function checkVisibility() {
+  const elements = document.querySelectorAll('.anim');
+
+  elements.forEach((element) => {
+    const rect = element.getBoundingClientRect();
+
+    // Vérifier si l'élément est dans le viewport et n'a pas encore été animé
+    if (
+      rect.top < window.innerHeight &&
+      rect.bottom >= 0 &&
+      !element.classList.contains('done')
+    ) {
+      element.classList.add('visible', 'done'); // Ajouter 'visible' et marquer comme 'done'
+    }
+  });
+}
+
+window.addEventListener('scroll', checkVisibility);
+checkVisibility();
+
+</script>
+
+<script> /* Enlvever les fleches du slider */
+    function updateSwiperNavigation() {
+    const swiperContainer = document.querySelector('.mySwiper');
+
+    if (window.innerWidth < 700) {
+        swiperContainer.setAttribute('navigation', 'false');
+    } else {
+        swiperContainer.setAttribute('navigation', 'true');
+    }
+}
+
+updateSwiperNavigation();
+
+window.addEventListener('resize', updateSwiperNavigation);
+
+</script>
+<script> /* Ouvrir le menu sur mobile */
+document.addEventListener('DOMContentLoaded', () => {
+    const navBurger = document.querySelector('.nav-burger');
+    const navMenu = document.querySelector('.nav-menu');
+    const navLinks = document.querySelectorAll('.nav-menu a');
+
+    // Fonction pour fermer le menu
+    const closeMenu = () => {
+        navMenu.classList.remove('active');
+        navBurger.classList.remove('active');
+    };
+
+    // Ouvrir/fermer le menu avec le bouton burger
+    navBurger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        navBurger.classList.toggle('active');
+    });
+
+    // Fermer le menu en cliquant sur un lien
+    navLinks.forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+
+    // Fermer le menu si on clique en dehors
+    document.addEventListener('click', (e) => {
+        if (!navMenu.contains(e.target) && !navBurger.contains(e.target)) {
+            closeMenu();
+        }
+    });
+
+    // Fermer le menu quand on scroll
+    window.addEventListener('scroll', closeMenu);
+});
+
+  </script>
+  

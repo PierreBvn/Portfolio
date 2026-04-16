@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenue sur mon site ! Découvrez mes compétences en développement web, mes projets, et contactez-moi facilement. Création de sites modernes et interactifs." />
+    <meta property="og:title" content="Portfolio - Pierre Boivin, Développeur Web">
+    <meta property="og:description" content="Découvrez mes compétences en développement web, mon parcours, mes projets, et contactez-moi facilement.">
+    <meta property="og:image" content="assets/Image de partage.jpg">
+    <meta property="og:url" content="https://boivinpierre.pages.dev">
+    <meta property="og:image:height" content="630">
+
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="styleProject.css" as="style">
+
+    <meta name="keywords" content="Pierre Boivin, développeur web, HTML, CSS, PHP, JavaScript, React, Node.js, portfolio, projets, contact">
+    <meta name="author" content="Pierre Boivin">
+
+
+    <link rel="stylesheet" href="styleProject.css">
+    <link rel="stylesheet" href="style_responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>Boivin Pierre - Glacier</title>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-pc" class="navbar">
+            <!-- Boutons à gauche -->
+            <div class="theme-buttons">
+                <button id="theme-toggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
+                <button id="color-toggle" class="color-toggle"><i class="fas fa-palette"></i></button>
+            </div>
+            
+            <!-- Liens au centre -->
+            <ul>
+                <li><a href="index.html#aboutme">A propos</a></li>
+                <li><a href="index.html#skills">Compétences</a></li>
+                <li><a href="index.html#parcours">Parcours</a></li>
+                <li><a href="index.html#projects">Projets</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            
+            <!-- Bouton à droite -->
+            <div class="theme-buttons">
+                <a href="assets/CV - Pierre Boivin.pdf" target="_blank">
+                <button id="cv-download">Mon CV <i class="fas fa-download"></i></button>
+                </a>
+            </div>
+        </nav>
+
+        <nav id="nav-mobile">
+            <div class="nav-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li>               
+                        <div class="theme-buttons">
+                            <button id="theme-toggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
+                            <button id="color-toggle" class="color-toggle"><i class="fas fa-palette"></i></button>
+                        </div>
+                    </li>
+                    <li><a href="index.html#aboutme">A propos</a></li>
+                    <li><a href="index.html#skills">Compétences</a></li>
+                    <li><a href="index.html#parcours">Parcours</a></li>
+                    <li><a href="index.html#projects">Projets</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="assets/CV - Pierre Boivin.pdf" class="download-cv" target="_blank">Mon CV <i class="fa fa-download"></i></a></li>
+                </ul>
+            </div>
+        </nav>            
+        
+        <div>
+            <a href="#header" class="scroll-top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </header>
+    <section id="firstpage">
+        <div class="name">
+            <h1>Boutique Glacier</h1>
+            <h2>SITE E-COMMERCE</h2>
+        </div>
+    </section>
+
+    <section id="aboutme">
+        <h2>À propos du projet</h2>
+        <div class="about-content anim anim-bottom">
+            <div class="about-text">
+                <p>
+                    A l'occasion de mon <strong>stage de troisième année</strong>, j'ai eu l'opportunité de développer le <strong>site e-commerce d'un grand Glacier des Hauts-de-France</strong>.
+                </p>
+                <p>
+                    Une grande partie du design avait été définie en amont. J’ai donc développé le site en respectant cette charte graphique et en assurant une <strong>parfaite adaptabilité sur tous les appareils</strong>. Le site est entièrement responsive, garantissant une expérience utilisateur optimale sur <strong>mobile</strong>, <strong>tablette</strong> et <strong>ordinateur</strong>. 
+                </br>J’ai également intégré des fonctionnalités essentielles à l’activité du client, incluant la <strong>gestion des ventes en ligne</strong>, l’implémentation de <strong>règles métier spécifiques</strong>, ainsi qu’un <strong>module de modélisation 3D</strong> permettant la personnalisation de certains produits pour offrir un <strong>rendu visuel immersif</strong>. 
+                </br>Enfin, j’ai intégré un <strong>moteur de blog</strong>, développé un <strong>système de devis</strong> pour certains produits et un mode <strong>multi-boutique</strong> facilitant le <strong>click & collect</strong> en fonction du <strong>magasin le plus proche</strong> et de son <strong>stock disponible</strong>.                </p>
+            </div>
+            <div class="about-quote anim anim-zoom">
+                <blockquote>
+                    Un projet très enrichissant qui m'a permit de développer mes compétences !
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="project-section reverse" id="design">
+        <h2>Design & Responsive</h2>
+    
+        <div class="project-section-container anim anim-bottom">
+            <div class="project-section-img-pc">
+                <img src="assets/VDC.png"/>
+            </div>
+            <div class="project-section-img-mobile">
+                <img src="assets/GlacierMobile.png"/>
+            </div>
+            <div class="project-section-text">
+                <h4>Design</h4>
+                <p>
+                    J’ai récupéré une partie du design sur Figma, que j’ai ensuite intégrée et adaptée sur le site en respectant scrupuleusement la charte graphique tout en optimisant l'affichage pour garantir une expérience utilisateur fluide. 
+                </p>
+                <h4>
+                    Responsive</h4>
+                <p>
+                    Le site est entièrement responsive, s'adaptant parfaitement aux différents écrans (ordinateurs, tablettes et mobiles) pour offrir une navigation intuitive et agréable sur tous les supports. 
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="project-section" id="commerce">
+        <h2>Commerce</h2>
+    
+        <div class="project-section-container anim anim-bottom">
+            <div class="project-section-text">
+                <h4>Design</h4>
+                <p>
+                    J'ai du mettre en place tout le système de commerce, en partant du produit, à la catégorie, au panier, en passant par le stock pour finir par le tunnel de commande.
+                </p>
+                <h4>
+                    Stock</h4>
+                <p>
+                    J'ai également dû adapter les stocks en fonction des boutiques.
+                </p>
+            </div>
+            <div class="project-section-img-mobile">
+                <img src="assets/GlacierMobile.png"/>
+            </div>
+            <div class="project-section-img-pc">
+                <img src="assets/GlacierCommerce.png"/>
+            </div>
+        </div>
+    </section>
+    <section class="project-section reverse" id="metier">
+        <h2>Métier spécifiques</h2>
+    
+        <div class="project-section-container anim anim-bottom">
+            <div class="project-section-img-pc">
+                <img src="assets/GlacierMetier.png"/>
+            </div>
+            <div class="project-section-img-mobile">
+                <img src="assets/GlacierMobile.png"/>
+            </div>
+            <div class="project-section-text">
+                <h4>Multi-boutique</h4>
+                <p>
+                    Afin d'avoir les produits disponibles en fonction de la boutique, j'ai du mettre en place un système de multi-boutique.
+                </p>
+                <h4>Produit réservable</h4>
+                <p>
+                    Les produits non disponible dans une boutique mais en stock dans une autre devait avoir le tag "Réservable" et permettre leurs réservation.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="project-section" id="3D">
+        <h2>Modélisation 3D & Personnalisation</h2>
+    
+        <div class="project-section-container anim anim-bottom">
+            <div class="project-section-text">
+                <h4>Modélisation 3D</h4>
+                <p>
+                    j’ai également mis en place un système de modélisation 3D de gâteaux permettant aux utilisateurs de visualiser leur création en temps réel.
+                </p>
+                <h4>Personnalisation</h4>
+                <p>
+                    Ainsi que la possiblité de personnaliser leur gâteau en changant le thème, en y ajoutant des photos ou du textes personnalisés. 
+                    <br>Chaque modification met à jour dynamiquement le modèle 3D afin d’offrir un rendu fidèle au résultat final.
+                </p>
+            </div>
+            <div class="project-section-img-mobile">
+                <img src="assets/GlacierMobile.png"/>
+            </div>
+            <div class="project-section-img-pc">
+                <img src="assets/Glacier3D.png"/>
+            </div>
+        </div>
+    </section>
+    <section class="project-section reverse" id="blog">
+        <h2>Intégration d'un moteur de blog</h2>
+    
+        <div class="project-section-container anim anim-bottom">
+            <div class="project-section-img-pc">
+                <img src="assets/GlacierBlog.png"/>
+            </div>
+            <div class="project-section-img-mobile">
+                <img src="assets/GlacierMobile.png"/>
+            </div>
+            <div class="project-section-text">
+                <h4>Moteur de Blog</h4>
+                <p>
+                    Intégration d’un moteur de blog dynamique permettant la publication et la gestion d’articles directement depuis une interface d’administration.
+                    <br>Le système prend en charge la création, la modification et la suppression de contenus, avec une organisation par catégories et une mise en forme structurée.
+                    <br>Cette fonctionnalité assure une gestion simple, évolutive et efficace du contenu du site.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="project-section" id="compte">
+        <h2>Gestion des utilisateurs</h2>
+    
+        <div class="project-section-container anim anim-bottom">
+            <div class="project-section-text">
+                <h4>Utilisateurs</h4>
+                <p>
+                    Mise en place et design d’un système complet de gestion des utilisateurs incluant l’inscription, la connexion et la sécurisation des comptes.
+                </p>
+            </div>
+            <div class="project-section-img-mobile">
+                <img src="assets/GlacierMobile.png"/>
+            </div>
+            <div class="project-section-img-pc">
+                <img src="assets/GlacierCompte.png"/>
+            </div>
+        </div>
+    </section>
+    <section class="project-section reverse" id="devis">
+        <h2>Produits sur devis</h2>
+    
+        <div class="project-section-container anim anim-bottom">
+            <div class="project-section-img-pc">
+                <img src="assets/GlacierDevis.png"/>
+            </div>
+            <div class="project-section-img-mobile">
+                <img src="assets/GlacierMobile.png"/>
+            </div>
+            <div class="project-section-text">
+                <h4>Automatisation des Devis</h4>
+                <p>
+                    Implémentation d’un système de produits sur devis permettant aux clients de formuler des demandes personnalisées selon leurs besoins spécifiques.
+                    <br>Le module collecte les informations essentielles (description, options, contraintes) et centralise les requêtes pour traitement côté administration.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <h2>Contactez-moi</h2>
+        <p>N'hésitez pas à me contacter pour toutes questions ou collaborations.</p>
+    
+        <div class="contact-container">
+            <form class="contact-form" method="post" action="https://formspree.io/f/xovqryod">
+                <div class="form-group">
+                    <label for="name">Nom*</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message*</label>
+                    <textarea id="message" name="message" placeholder="Votre message" rows="5" style="resize: vertical;" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Envoyer</button>
+            </form>
+        
+            <div class="map-container">
+                <a href="https://www.google.fr/maps?q=Lille" target="_blank">
+                    <img src="assets/Lille map.webp" alt="Lille sur la carte">
+                </a>
+            </div>
+        </div>
+    
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/cesi-boivin-pierre/" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/PierreBvn" target="_blank" class="social-link">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="info">
+                <h4>Boivin Pierre</h4>
+                <p>Développeur Web</p>
+                <a href="assets/CV - Pierre Boivin.pdf" class="download-cv" target="_blank">Télécharger mon CV</a>
+            </div>
+            <div class="plan">
+                <ul>
+                    <li><a href="#aboutme">À propos</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#parcours">Parcours</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Boivin Pierre - Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+    const themeToggleButton = document.querySelector('.theme-toggle');
+    const colorToggleButton = document.getElementById('color-toggle','2');
+    
+    const colors = ['salmon', 'steelblue', 'mediumseagreen', '#9F50F5'];
+    let currentColorIndex = 0;
+    
+    // Basculer le thème sombre
+    themeToggleButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-theme');
+        themeToggleButton.innerHTML = document.body.classList.contains('dark-theme') 
+            ? '<i class="fas fa-sun"></i>' // Icône pour le mode clair
+            : '<i class="fas fa-moon"></i>'; // Icône pour le mode sombre
+    });
+    
+      // Changer la couleur principale
+      colorToggleButton.addEventListener('click', () => {
+      currentColorIndex = (currentColorIndex + 1) % colors.length;
+      const newColor = colors[currentColorIndex];
+    
+      // Modifier la couleur pour les deux thèmes
+      document.documentElement.style.setProperty('--first-color', newColor);
+      document.body.classList.contains('dark-theme') &&
+        document.documentElement.style.setProperty('--first-color', newColor);
+    });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    
+    <script>
+    // Fonction pour vérifier la visibilité d'un élément
+    function checkVisibility() {
+      const elements = document.querySelectorAll('.anim');
+    
+      elements.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+    
+        // Vérifier si l'élément est dans le viewport et n'a pas encore été animé
+        if (
+          rect.top < window.innerHeight &&
+          rect.bottom >= 0 &&
+          !element.classList.contains('done')
+        ) {
+          element.classList.add('visible', 'done'); // Ajouter 'visible' et marquer comme 'done'
+        }
+      });
+    }
+    
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility();
+    
+    </script>
+    
+    <script> /* Enlvever les fleches du slider */
+        function updateSwiperNavigation() {
+        const swiperContainer = document.querySelector('.mySwiper');
+    
+        if (window.innerWidth < 700) {
+            swiperContainer.setAttribute('navigation', 'false');
+        } else {
+            swiperContainer.setAttribute('navigation', 'true');
+        }
+    }
+    
+    updateSwiperNavigation();
+    
+    window.addEventListener('resize', updateSwiperNavigation);
+    
+    </script>
+    <script> /* Ouvrir le menu sur mobile */
+    document.addEventListener('DOMContentLoaded', () => {
+        const navBurger = document.querySelector('.nav-burger');
+        const navMenu = document.querySelector('.nav-menu');
+        const navLinks = document.querySelectorAll('.nav-menu a');
+    
+        // Fonction pour fermer le menu
+        const closeMenu = () => {
+            navMenu.classList.remove('active');
+            navBurger.classList.remove('active');
+        };
+    
+        // Ouvrir/fermer le menu avec le bouton burger
+        navBurger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navBurger.classList.toggle('active');
+        });
+    
+        // Fermer le menu en cliquant sur un lien
+        navLinks.forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+    
+        // Fermer le menu si on clique en dehors
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !navBurger.contains(e.target)) {
+                closeMenu();
+            }
+        });
+    
+        // Fermer le menu quand on scroll
+        window.addEventListener('scroll', closeMenu);
+    });
+    
+      </script>
